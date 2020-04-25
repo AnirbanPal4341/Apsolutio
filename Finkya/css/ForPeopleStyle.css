@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.bg-color{
+    background: linear-gradient(111deg,rgba(251,251,254,1) 0,rgba(207,208,248,1) 9%,rgba(145,148,240,1) 26%,rgba(134,137,238,1) 50%,rgba(104,108,233,1) 70%,rgba(255,255,255,1) 70%) fixed;
+    width: 100%;
+}
+.logo{
+    width: 45px;
+    height: 45px;
+}
+.menu{
+   display:flex;
+}
+.finakya{
+    font-size: 29px;
+    padding-top: 10px;
+    color: white;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+}
+.logo-finakya{
+    display: inline-flex;
+    margin-left: 3.2%;
+    margin-top: 1.5%;
+}
+.menu-nav{
+    margin-left: 12%; 
+}
+
+ul{
+    align-items: center;
+    list-style: none;
+    margin-top: 5%;
+}
+li{
+    display: inline-flex;
+}
+li a{
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal;
+    margin-left: 10px;
+    text-decoration: none;
+}
+li a:hover{
+    zoom: 1.03 ;
+    text-decoration: underline;
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.content{
+    margin-left: 4.8%;
+
+}
+.content-mid{
+    margin-top: 2% ;
+    margin-bottom: 1.5% ;
+}
+table{
+    margin-top: 2%;
+    border-radius: 5px;
+    border-spacing: 0px;
+    height:50px;
+    background-color: white;
+    margin-right: 1%;
+}
+.frm{
+    margin-top: 5%;
+}
+.form{
+    margin-left: 10px;
+    border: 0px;
+}
+.btn{
+    border: 0px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 8px;
+    margin-left: 65px;
+    color: white;
+    background: linear-gradient(to right , rgb(107, 107, 235) 70% , rgb(192, 100, 192));
+}
+.img{
+    height: 442.5px;
+     width: fit-content;
+    float: right;
+    transform: translateY(-31.4%);
+    margin-bottom: -11%;
+    overflow: hidden;
+}
+.mobile-icon{
+    color: white;
+}
+#tabs{
+    display: none;
+}
+.h{
+    font-size: 2.5vw;
+     color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1230px)
+{
+    .img{
+        transform: translateY(16%);
+        height: 350px;
+    }
+    #im{
+        height: 350px;
+    }
+    .frm{
+        margin-top: 6%;
+    }
+    .menu-nav{
+        margin-left: 9%;
+    }
+    li a{
+        font-size: 12px;
+    }
+    ul{
+        margin-top: 8%;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .bg-color{
+        background: linear-gradient(to right ,rgba(175,137,243,1) 0,rgba(162,131,242,1) 17%,rgba(140,120,239,1) 35%,rgba(123,112,236,1) 50%,rgba(107,104,234,1) 70%) fixed;
+        
+    }
+    .finakya{
+        font-size: 21px;
+        padding-top: 20px;
+    }
+    .logo-finakya{
+        margin-left: 1.6%;
+        margin-top: 1%;
+    }
+    #col1{
+        width: 70%;
+    }
+    .mobile-icon{
+        zoom: 2.5;
+        text-decoration: none;
+    }
+    #tabs{
+        display: block;
+        margin-top: 0%;
+        margin-right: 5%;
+        float: right;    
+    }
+    li{
+        display: block;
+        margin-top: 2.5%;
+    }
+    li a{
+        font-size: 14px;
+    }
+    .menu{
+        display: block;
+    }
+    ul{
+        margin-top: -1%;
+    }
+    .menu-nav{
+        margin-left: 1.6%;
+    }
+    .h{
+        font-size:28px;
+    }
+}
+@media screen and (max-width: 888px)
+{
+    #col1{
+        width: 0%;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 727px)
+{
+    #col1{
+        width: 0%;
+        width: 50%;
+    }
+    .btn{
+        margin-left:88px;
+    }
+}
+@media screen and (max-width: 700px)
+{
+   table{
+       margin-right: 5%;
+   } 
+}
+@media screen and (max-width: 676px)
+{
+    #col1{
+        width: 15px;
+    }
+    #frm
+    {
+        size: 4;
+    }
+    .btn{
+        margin-left:65px ;
+    }
+    .img{
+        height: 300px;
+        width: 250px;
+        margin-right: 20%;
+    }
+    #im{
+        height: 300px;
+        width: 400px;
+    }
+    .content-mid{
+        margin-bottom: 2.5%;
+    }
+
+}
+@media screen and (max-width :502px)
+{
+    .btn{
+        margin-left: 10px;
+    }
+    .img{
+        margin-right:15%;
+    }
+
+}
+@media screen and (max-width : 405px)
+{
+    .btn{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
+@media screen and (max-width : 304px)
+{
+    .img{
+        margin-right:8%;
+    }
+}
+@media screen and (max-width: 320px )
+{
+    table{
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width:292px)
+{
+    .btn{
+        margin-right:8%;
+        padding-right: 2%;
+    }
+}

@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.bg-color{
+    background: linear-gradient(111deg,rgba(12,12,14,1) 0,rgba(20,21,48,.9332107843137255) 16%,rgba(39,40,95,1) 35%,rgba(57,59,139,1) 58%,rgba(81,84,197,1) 70%,rgba(255,255,255,1) 70%) fixed;
+    width: 100%;
+}
+.logo{
+    width: 45px;
+    height: 45px;
+}
+.menu{
+   display:flex;
+}
+.finakya{
+    font-size: 29px;
+    padding-top: 10px;
+    color: white;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+}
+.logo-finakya{
+    display: inline-flex;
+    margin-left: 3.2%;
+    margin-top: 1.5%;
+}
+.menu-nav{
+    margin-left: 12%; 
+}
+
+ul{
+    align-items: center;
+    list-style: none;
+    margin-top: 5%;
+}
+li{
+    display: inline-flex;
+}
+li a{
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal;
+    margin-left: 10px;
+    text-decoration: none;
+}
+li a:hover{
+    zoom: 1.03 ;
+    text-decoration: underline;
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.content{
+    margin-left: 4.8%;
+
+}
+.content-mid{
+    margin-top: 2% ;
+    margin-bottom: 1.5% ;
+}
+table{
+    margin-top: 2%;
+    border-radius: 5px;
+    border-spacing: 0px;
+    height:50px;
+    background-color: white;
+    margin-right: 1%;
+}
+.frm{
+    margin-top: 5%;
+}
+.form{
+    margin-left: 10px;
+    border: 0px;
+}
+.btn{
+    border: 0px;
+    margin-top: 2%;
+    zoom:1.08;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background: rgb(37, 209, 51);
+}
+.img{
+    height: 442.5px;
+     width: fit-content;
+    float: right;
+    transform: translateY(-29%);
+    margin-bottom: -10%;
+    overflow: hidden;
+}
+.mobile-icon{
+    color: white;
+}
+#tabs{
+    display: none;
+}
+.h{
+    font-size: 2.5vw;
+     color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1150px)
+{
+    .img{
+        transform: translateY(16%);
+        height: 350px;
+    }
+    #im{
+        height: 350px;
+    }
+    .menu-nav{
+        margin-left: 9%;
+    }
+    li a{
+        font-size: 12px;
+    }
+    ul{
+        margin-top: 8%;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .bg-color{
+        background: linear-gradient(111deg,rgba(12,12,14,1) 0,rgba(20,21,48,.9332107843137255) 16%,rgba(39,40,95,1) 35%,rgba(57,59,139,1) 58%,rgba(81,84,197,1) 73%,rgba(93,97,228,1) 100%) fixed;        
+    }
+    .finakya{
+        font-size: 21px;
+        padding-top: 20px;
+    }
+    .logo-finakya{
+        margin-left: 1.6%;
+        margin-top: 1%;
+    }
+    .mobile-icon{
+        zoom: 2.5;
+        text-decoration: none;
+    }
+    #tabs{
+        display: block;
+        margin-top: 0%;
+        margin-right: 5%;
+        float: right;    
+    }
+    li{
+        display: block;
+        margin-top: 2.5%;
+    }
+    li a{
+        font-size: 14px;
+    }
+    .menu{
+        display: block;
+    }
+    ul{
+        margin-top: -1%;
+    }
+    .menu-nav{
+        margin-left: 1.6%;
+    }
+    .h{
+        font-size:28px;
+    }
+}
+
+@media screen and (max-width: 676px)
+{
+    .img{
+        height: 300px;
+        width: 250px;
+        margin-right: 20%;
+    }
+    #im{
+        height: 300px;
+        width: 400px;
+    }
+    .content-mid{
+        margin-bottom: 2.5%;
+    }
+
+}
+@media screen and (max-width :502px)
+{
+    .img{
+        margin-right:15%;
+    }
+
+}
+@media screen and (max-width : 304px)
+{
+    .img{
+        margin-right:8%;
+    }
+}
