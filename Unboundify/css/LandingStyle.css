@@ -445,15 +445,38 @@ header{
     }
 }
 @media screen and (max-width : 783px){
-    #email-login{
-        width: 50%;
-        margin-left: 19%;
+    .signup-form{
+        width: 40%;
+        left: 30%;
     }
-    #login-pass{
-        width: 50%;
-        margin-left: 19%;
+    #email-signup{
+        padding-right: 5%;
+        padding-left: 5%;
+        
+    }
+    #signup-pass{
+        padding-right: 5%;
+        padding-left: 5%;
+     
     }
     #mod{
-        font-size: 20%;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 571px){
+    .signup-form{
+        width: 50%;
+        left: 26%;
+    }
+    #email-signup{
+        width: 60%;
+        margin-left: 17%;
+    }
+    #signup-pass{
+        width: 60%;
+        margin-left: 17%;
+    }
+    #mod{
+        font-size: 10px;
     }
 }
