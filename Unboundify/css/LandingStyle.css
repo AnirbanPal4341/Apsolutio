@@ -10,6 +10,13 @@ html,body{
 .hidden-logo , .hidden-bar {
     display: none;
 }
+#pop-menu{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 70%;
+    top: 7%;
+}
 #popup-outer{
     display: none;
     height: 100%;
@@ -19,14 +26,6 @@ html,body{
     opacity: 0.42;
     position: absolute;
     z-index: 4;
-}
-#pop-menu{
-    display: none;
-    position: absolute;
-    z-index: 2;
-    left: 70%;
-    top: 7%;
-    
 }
 #poplogin{
     position: absolute;
@@ -120,9 +119,6 @@ html,body{
     padding: 0.2%;
     border: 1px solid rgb(209, 204, 204);
     z-index: 5;
-}
-#chk{
-    background: orange;
 }
 #email-signup{
     background:rgb(33, 33, 33);
@@ -280,9 +276,7 @@ header{
     overflow-y: auto;
 }
 .card{
-    background-image: url("../images/card-img.png");
-    background-repeat: none;
-    background-size: auto;
+    
     border-radius: 10.5px;
     height: 25%;
     width: 20%;  
@@ -290,11 +284,15 @@ header{
 .card:hover{
     border: 1px solid  rgba(149, 152, 154 , 100%);
 }
+.card-img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
 .info{
     display: flex;
     flex-direction:column;
     justify-content: flex-end;
-    margin-top: 70%;
     background: rgba(33, 33 , 33 ,100%);
     padding: 5%;
     border-radius: 0px 0px 9.5px 9.5px;
