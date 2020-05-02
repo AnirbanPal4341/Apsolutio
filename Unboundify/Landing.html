@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <div id="popup-outer"></div>
     <div class="login-form animated fadeInDownBig" id="poplogin" >
         <div style="top: 0%; float: right; margin-left: 95%;"><a href="../Unboundify/Landing.html" style="text-decoration: none;  color: white;">X</a></div>
         <div><input type="text" name="email-login"  id="email-login" value="email"></div>
@@ -27,7 +28,7 @@
         <div><input type="password" name="signup-pass" value="password" id="signup-pass"></div>
         <div><input type="password" name="signup-pass" value="password" id="signup-pass"></div>
         <div id="mod-con">
-            <input type="checkbox" name="moderator">
+            <input type="checkbox" name="moderator" id="chk">
             <label id="mod">Consider me as a morderator</label>
         </div>
         <div id="signup-icon">
@@ -151,12 +152,18 @@
      <script>
         function popuplogin(){
             var x = document.getElementById("poplogin");
+            var z = document.getElementById("popup-outer");
+            var b = document.getElementById("bd");
             if(x.style.display === "none"){
                 x.style.display = "flex";
+                z.style.display = "flex";
+                b.style.overflowY = "hidden"
             }
                 else
                 {
+                    z.style.display = "none";
                     x.style.display = "none";
+                    b.style.overflowY = "auto";
                 }
         }
     </script>

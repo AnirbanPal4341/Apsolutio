@@ -10,10 +10,20 @@ html,body{
 .hidden-logo , .hidden-bar {
     display: none;
 }
+#popup-outer{
+    display: none;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 40px 20px rgba(0, 0, 0, 0.46);
+    background-color: #303445;
+    opacity: 0.42;
+    position: absolute;
+    z-index: 4;
+}
 #pop-menu{
     display: none;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     left: 70%;
     top: 7%;
     
@@ -110,6 +120,9 @@ html,body{
     padding: 0.2%;
     border: 1px solid rgb(209, 204, 204);
     z-index: 5;
+}
+#chk{
+    background: orange;
 }
 #email-signup{
     background:rgb(33, 33, 33);
@@ -254,6 +267,10 @@ header{
     font-size: 12px;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+.menu3 > li:hover{
+    color:  rgb(0, 110, 255);
+    border: 1px solid  rgb(0, 110, 255);
 }
 .deck1{
     display: flex;
