@@ -1,0 +1,292 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      <div class="row">
+        <div class="col-xl-2 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Items breached SLA</h5>
+                  <span class="h2 font-weight-bold mb-0">350,897</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Items left to process</h5>
+                  <span class="h2 font-weight-bold mb-0">350,897</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Items processed this month</h5>
+                  <span class="h2 font-weight-bold mb-0">350,897</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">High priority campaign items to process</h5>
+                  <span class="h2 font-weight-bold mb-0">350,897</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">High priority verification items to process</h5>
+                  <span class="h2 font-weight-bold mb-0">350,897</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+
+  <!-- table -->
+  <div class="container-fluid mt--7">
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-header border-0">
+            <h3 class="mb-0" placement="top"><strong  placement="right" ngbTooltip="Click on a row to update status!">Campaign Data</strong></h3>
+          </div>
+          <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">bicon</th>
+                  <th scope="col">cname</th>
+                  <th scope="col">cdescription</th>
+                  <th scope="col">ctgender</th>
+                  <th scope="col">ctlocation</th>
+                  <th scope="col">ctagegroup</th>
+                  <th scope="col">ctfav</th>
+                  <th scope="col">ctcustier</th>
+                  <th scope="col">ctincomegroup</th>
+                  <th scope="col">cexpdate</th>
+                  <th scope="col">coupon</th>
+                  <th scope="col">cstatus</th>             
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let tableRow of posts" (click)="open(content, tableRow)"  style="cursor: pointer;" >
+                  <td><img src="{{ tableRow.bicon }}" height="50px" width="50px"></td>
+                  <td>{{tableRow.cname}}</td>
+                  <td>{{tableRow.cdescription}}</td>
+                  <td>{{tableRow.ctgender}}</td>
+                  <td>{{tableRow.ctlocation}}</td>
+                  <td>{{tableRow.ctagegroup}}</td>
+                  <td>{{tableRow.ctfav}}</td>
+                  <td>{{tableRow.ctcustier}}</td>
+                  <td>{{tableRow.ctincomegroup}}</td>
+                  <td>{{tableRow.cexpdate}}</td>
+                  <td>{{tableRow.coupon}}</td>
+                  <td *ngIf="tableRow.cstatus === 'Accepted'"><span class="badge badge-dot mr-4">
+                    <i class="bg-success"></i>{{tableRow.cstatus}}
+                  </span></td>
+                  <td  *ngIf="tableRow.cstatus === 'Rejected'"><span class="badge badge-dot mr-4">
+                    <i class="bg-warning"></i>{{tableRow.cstatus}}
+                  </span></td>
+                  <td *ngIf="tableRow.cstatus === 'In progress'"><span class="badge badge-dot mr-4">
+                    <i class="bg-info"></i>{{tableRow.cstatus}}
+                  </span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Update Status</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <img src="{{selectedRow.bicon}}" height="100px" width="100px" style="cursor: pointer;">
+            </div>
+            <hr>
+          </div>
+          <div class="col-md-5" >
+            <div class="form-group">cname:
+              <input type="text" class="form-control"  placeholder="" value="{{selectedRow.cname}}" readonly style="color: #172b4d; cursor: pointer;">            
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="cname" type="checkbox"  (change)="onNativeChange($event ,'cname')">
+            <label class="custom-control-label" for="cname"></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">cdescription:
+              <input type="text" placeholder="" class="form-control" value="{{selectedRow.cdescription}}" readonly style="color: #172b4d; cursor: pointer;">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="cdescription" type="checkbox" (change)="onNativeChange($event ,'cdescription')">
+            <label class="custom-control-label" for="cdescription"></label>
+          </div>
+          <div class="col-md-5">
+          <div class="form-group">ctgender:
+            <input type="text" class="form-control"  placeholder="" value="{{selectedRow.ctgender}}" readonly style="color: #172b4d; cursor: pointer;">
+          </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="ctgender" type="checkbox" (change)="onNativeChange($event ,'ctgender')">
+            <label class="custom-control-label" for="ctgender"></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">ctlocation:
+              <input type="text" placeholder="" class="form-control" value="{{selectedRow.ctlocation}}" readonly style="color: #172b4d; cursor: pointer;">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="ctlocation" type="checkbox" (change)="onNativeChange($event ,'ctlocation')">
+            <label class="custom-control-label" for="ctlocation"></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">ctagegroup:
+              <input type="text" placeholder="" class="form-control" value="{{selectedRow.ctagegroup}}" readonly style="color: #172b4d; cursor: pointer;">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="ctagegroup" type="checkbox" (change)="onNativeChange($event ,'ctagegroup')">
+            <label class="custom-control-label" for="ctagegroup"></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">ctfav:
+              <input type="text" placeholder="" class="form-control" value="{{selectedRow.ctfav}}" readonly style="color: #172b4d; cursor: pointer;">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="ctfav" type="checkbox" (change)="onNativeChange($event ,'ctfav')">
+            <label class="custom-control-label" for="ctfav"></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">ctcustier:
+              <input type="text" placeholder="" class="form-control" value="{{selectedRow.ctcustier}}" readonly style="color: #172b4d; cursor: pointer;">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="ctcustier" type="checkbox" (change)="onNativeChange($event ,'ctcustier')">
+            <label class="custom-control-label" for="ctcustier"></label>
+          </div>
+          <div class="col-md-5">
+          <div class="form-group">ctincomegroup:
+            <input type="text" class="form-control"  placeholder="" value="{{selectedRow.ctincomegroup}}" readonly style="color: #172b4d; cursor: pointer;">
+          </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="ctincomegroup" type="checkbox" (change)="onNativeChange($event ,'ctincomegroup')">
+            <label class="custom-control-label" for="ctincomegroup"></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">cexpdate:
+              <input type="text" placeholder="" class="form-control" value="{{selectedRow.cexpdate}}" readonly style="color: #172b4d; cursor: pointer;">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="cexpdate" type="checkbox" (change)="onNativeChange($event ,'cexpdate')">
+            <label class="custom-control-label" for="cexpdate"></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">coupon:
+              <input type="text" placeholder="" class="form-control" value="{{selectedRow.coupon}}" readonly style="color: #172b4d; cursor: pointer;">
+            </div>
+          </div>
+          <div class="custom-control custom-checkbox mb-3" style="margin-top: 15px;">
+            <input class="custom-control-input" id="coupon" type="checkbox" (change)="onNativeChange($event ,'coupon')">
+            <label class="custom-control-label" for="coupon"></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">cstatus:
+              <input type="text" placeholder="" class="form-control" value="{{selectedRow.cstatus}}" readonly style="color: #172b4d; cursor: pointer;">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" (click)="onAccept(selectedRow) ; modal.close( Refresh())">Accept</button>
+      <button type="button" class="btn btn-danger" (click)="onReject(selectedRow) ; modal.close(Refresh())">Decline</button>
+    </div>
+  </ng-template>
